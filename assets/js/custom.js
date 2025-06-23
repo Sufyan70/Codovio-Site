@@ -126,26 +126,28 @@
 
 	///=============  Portfolio 1 Slider  =============\\\
 	
-	var swiper = new Swiper(".portfolio__one-slider", {
-		spaceBetween: 35,
-		slidesPerView: 3,
-		centeredSlides: true,
-		loop: true,
-		breakpoints: {
-			0: {
-				slidesPerView: 1
-			},
-			575: {
-				slidesPerView: 1
-			},
-			992: {
-				slidesPerView: 3
-			},
-			1200: {
-				slidesPerView: 3
-			},
-		}
-	});
+var swiper = new Swiper('.portfolio__one-slider', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 1,
+    }
+  }
+});
+
 
 	/*==========  Brand  ==========*/
 	var swiper = new Swiper(".brand__slider", {

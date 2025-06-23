@@ -132,7 +132,7 @@ var swiper = new Swiper('.portfolio__one-slider', {
   loop: true,
   centeredSlides: true,
   autoplay: {
-    delay: 1000,
+    delay: 1500,
     disableOnInteraction: false,
   },
   breakpoints: {
